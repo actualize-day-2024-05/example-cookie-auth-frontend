@@ -1,8 +1,9 @@
-# React + Vite
+# Readme
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Differences between cookie auth and localStorage auth:
 
-Currently, two official plugins are available:
+- [src/App.jsx](/src/App.jsx): Configure `axios` to send credentials by default
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [src/LoginPage.jsx](/src/LoginPage.jsx): Remove `axios` and `localStorage` configuration
+
+- [src/LogoutLink.jsx](/src/LogoutLink.jsx): Send `delete` request instead of `localStorage`
